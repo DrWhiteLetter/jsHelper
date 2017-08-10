@@ -20,9 +20,9 @@ $(".getHeightFromMax991").getHeightFrom({maxViewport:'991'});
 	$.fn.getHeightFrom=function( options ){
 
 		var settings = $.extend({
-            // defaults.
-            maxViewport: "767",
-        }, options );
+      // defaults.
+      maxViewport: "767",
+    }, options );
 
 		var $cells = this;
 
@@ -58,7 +58,6 @@ $(".getHeightFromMax991").getHeightFrom({maxViewport:'991'});
 			});
 
 		});
-
 
 	}
 
