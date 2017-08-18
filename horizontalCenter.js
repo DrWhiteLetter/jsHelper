@@ -1,18 +1,28 @@
 
+/* *****************************************************************************
+Center an element
+
+Example:
+
+$(".centerBox").horizontalCenter();
+
+<div class="centerBox"></div>
+
+***************************************************************************** */
 
 (function($){
 	$.fn.horizontalCenter=function(){
-		
+
 		var $boxes = this;
 		centerBox($boxes);
-		
+
 		$(window).resize(function() {
 			centerBox($boxes);
 		});
 
-		
+
 	};
-	
+
 	var centerBox = function( $boxes ) {
 
 		$($boxes).each(function(){
@@ -26,9 +36,7 @@
 				'margin-left': -$marginLeft
 			});
 		});
-		
+
 	}
-	
+
 })(jQuery);
-
-
